@@ -1,32 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic-Tac-Toe</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tic-Tac-Toe</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
 
-</head>
-<body>
+    </head>
+    <body>
 
-    <div id="outerDiv">
-        <div id="message"></div>
-        <div id="gridContainer">
-            <div  class="square" data-index="0"></div>
+        <div id="outerDiv">
+            <div id="nameInputs">
+                <input type="text" id="player1Name"
+                    placeholder="Player 1 Name" />
+                <input type="text" id="player2Name"
+                    placeholder="Player 2 Name" />
+                <button id="startGame">Start Game</button>
+            </div>
+            <div id="message"></div>
+            <div id="gridContainer">
+                <div class="square" data-index="0"></div>
 
-            <div  class="square" data-index="1"></div>
-            <div  class="square" data-index="2"></div>
-            <div  class="square" data-index="3"></div>
-            <div  class="square" data-index="4"></div>
-            <div  class="square" data-index="5"></div>
-            <div  class="square" data-index="6"></div>
-            <div  class="square" data-index="7"></div>
-            <div  class="square" data-index="8"></div>
+                <div class="square" data-index="1"></div>
+                <div class="square" data-index="2"></div>
+                <div class="square" data-index="3"></div>
+                <div class="square" data-index="4"></div>
+                <div class="square" data-index="5"></div>
+                <div class="square" data-index="6"></div>
+                <div class="square" data-index="7"></div>
+                <div class="square" data-index="8"></div>
+            </div>
+
+            <div id="buttons">
+                <button id="reset">Reset</button>
+                <button id="clear">New Game</button>
+            </div>
+            <div id="scoreBoard">
+                <p id="score1" class="score">Player 1: 0</p>
+                <p id="score2" class="score">Player 2: 0</p>
+            </div>
+
         </div>
 
-        <button id="reset">Reset</button>
-    </div>
-    
-</body>
+    </body>
 </html>

@@ -1,63 +1,132 @@
 #outerDiv {
-  display: flex;
-  justify-content: center;
-  font-size: 100%;
-  color: black;
-  height: 95vh;
-  width: 100vw;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 100%;
+    color: rgb(255, 255, 255);
+    height: 95vh;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
 }
 
 #gridContainer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  border: black solid 4px;
-  width: 300px;
-  height: 300px;
-  gap: 5px;
-  align-self: center;
-}
-.square {
-  background-color: #f0f0f0;
-  border: 2px solid #333;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
-}
-.square:hover {
-  background-color: burlywood;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: black solid 4px;
+    width: 300px;
+    height: 300px;
+    gap: 5px;
+    align-self: center;
 }
 
-#reset {
-  padding: 10px 20px;
-  font-size: 1rem;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 20px auto 0;
-  display: block;
-  transition: background-color 0.3s ease;
-  width: fit-content;
+.square {
+    background-color: #f0f0f0;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background-color: #2d2d2d;
+    border-color: #9d9d9d;
+
+}
+
+.square:hover {
+    background-color: #d600ff3d;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 25vw;
+}
+
+#reset,
+#clear {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 40px auto 0;
+    display: block;
+    transition: background-color 0.3s ease;
+    width: 10vw;
+    background-color: #00ffc8;
+    color: black;
+
 }
 
 #reset:hover {
-  background-color: #0056b3;
+    background-color: #0056b3;
 }
+
+#clear:hover {
+    background-color: red;
+}
+
 #message {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: green;
-  margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1ffd1f;
+    margin-bottom: 20px;
 }
 
 .winning-square {
-  background-color: gold !important;
+    background-color: gold !important;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    background-image: radial-gradient(#9400ff 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+#nameInputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+#nameInputs input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+#startGame {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#startGame:hover {
+    background-color: #0056b3;
+}
+
+#scoreBoard {
+    display: flex;
+    justify-content: space-between;
+    width: 25vw;
+    margin-top: 3vh;
+    font-size: 30px;
+
+}
+
+.score {
+    background-color: #000000;
+    width: fit-content;
 }
