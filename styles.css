@@ -87,6 +87,7 @@ body {
     color: #ffffff;
     background-image: radial-gradient(#9400ff 1px, transparent 1px);
     background-size: 20px 20px;
+    font-family: 'Press Start 2P', cursive;
 }
 
 #nameInputs {
@@ -120,9 +121,9 @@ body {
 #scoreBoard {
     display: flex;
     justify-content: space-between;
-    width: 25vw;
+    width: 30vw;
     margin-top: 3vh;
-    font-size: 30px;
+    font-size: 100%;
 
 }
 
